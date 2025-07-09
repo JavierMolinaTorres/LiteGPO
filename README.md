@@ -16,3 +16,5 @@ Permite instalar en una relación 1 a 1 un script Power Shell desde una máquina
 Permite desplegar scripts desde un servidor Linux de forma centralizada y simultánea, tanto en tiempo real como en ventana de oportunidad (cuando el usuario se conecte).
 
 Para que LiteGPO, tanto centralizado como punto-a-punto), funcione es preciso instalar y habilitar SSH en el ordenador remoto.
+
+Los scripts que se vayan introduciendo son en en su mayoría para LiteGPO punto-a-punto. Cuando sean aptos para servidores, se indicarán de forma clara en el nombre mismo del script empleando el prefijo "server".
