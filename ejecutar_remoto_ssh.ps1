@@ -7,8 +7,18 @@
 # la ip o nombre de la máquina (en este caso verificar que puede hacerse ping al mismo, en caso contrario contra la ip directa)
 # el usuario administrador y su password. Debemos también estar seguros que la máquina remota posee SSH y el firewall está habilitado
 # para dejar pasar el puerto 22
+# El resultado sería algo parecido a:
+# Ejecutando
+# en
+# DESKTOP-xxxxxxx"
+#
+# Fecha:
+# 2025-03-09 05:46:39
+#
+# OsName                   WindowsVersion
+# ------                   --------------
+# Microsoft Windows 11 Pro 2009
 # ----------------------------------------------------------
-
 # Parámetros
 $usuario = "admin"       # Debe modificarse según el usuario administrador de la máquina remota
 $equipo = "192.xxx.xxx.xxx"    # IP o nombre del equipo remoto
