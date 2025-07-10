@@ -11,14 +11,18 @@ Existen tres tipos básicos de LiteGPO.
 
 Permite instalar en una relación 1 a 1 un script Power Shell desde una máquina cualquiera de la red en otra máquina remota de la cual se cuenta con visibilidad y credenciales suficientes. Permite contra-GPOs o comunicarse con máquinas fuera del DA.
 
+Los scripts que se vayan introduciendo son en en su mayoría para LiteGPO punto-a-punto. Cuando sean aptos para servidores, se indicarán de forma clara en el nombre mismo del script empleando el prefijo "server". En ningún caso son aptos para DA Microsoft.
+
 # El segundo es LiteGPO centralizado: 
 
 Permite desplegar scripts desde un servidor Linux de forma centralizada y simultánea, tanto en tiempo real como en ventana de oportunidad (cuando el usuario se conecte).
 
 Para que LiteGPO, (tanto centralizado como punto-a-punto), funcione es preciso instalar y habilitar SSH en el ordenador remoto y disponer de un servidor Linux.
 
-Los scripts que se vayan introduciendo son en en su mayoría para LiteGPO punto-a-punto. Cuando sean aptos para servidores, se indicarán de forma clara en el nombre mismo del script empleando el prefijo "server".
+Los scripts que se vayan introduciendo para LiteGPO centralizado se indicarán de forma clara en el nombre mismo del script empleando el prefijo "server".  En ningún caso son aptos para DA Microsoft ni para LiteGPO punto-a-punto.
 
 # El tercero es LiteGPO punto-a-multipunto:
 
 Aquí ya no es necesario disponer de un servidor, ni Linux ni Windows. Una de las máquinas (cualquier Windows 10/11 sirve) se erige como orquestador, aplicando la política pertinente en todos los dispositivos sobre los que tenga visión en su VLAN. Lógicamente, si la máquina pertenece a un usuario, su disponibilidad es menor que en el modelo de LiteGPO centralizado.
+
+Los scripts que se vayan introduciendo para LiteGPO punto-a-multipunto son variaciones de los empleados en punto-a-punto solo que permiten cargar csv o listados de nombres/ips así como establecer controles de ejecución más precisos.
